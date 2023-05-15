@@ -1,27 +1,30 @@
 <?php include('db_connect.php');?>
 
 <div class="container-fluid">
-	
+<body style="background-color:aqua">
 	<div class="col-lg-12">
 		<div class="row">
 			<!-- FORM Panel -->
 			<div class="col-md-4">
 			<form action="" id="manage-gallery">
 				<div class="card">
+					<style>.card-header{color:red}</style>
 					<div class="card-header">
-						    Upload
+						    <h4><b>Upload</b></h4>
 				  	</div>
 					<div class="card-body">
 							<input type="hidden" name="id">
 							<div class="form-group">
-								<label for="" class="control-label">Image</label>
+							    <style>.control-label{color:blue}</style>
+								<label for="" class="control-label"><b>Choose Image</b></label>
 								<input type="file" class="form-control" name="img" onchange="displayImg(this,$(this))">
 							</div>
 							<div class="form-group">
 								<img src="<?php echo is_file('assets/uploads/gallery/img_') ?>" alt="" id="cimg">
 							</div>
 							<div class="form-group">
-								<label class="control-label">Short Description</label>
+							    <style>.control-label{color:blue}</style>
+								<label class="control-label"><b>Brief Description</b></label>
 								<textarea class="form-control" name='about'></textarea>
 							</div>
 							
@@ -30,7 +33,7 @@
 					<div class="card-footer">
 						<div class="row">
 							<div class="col-md-12">
-								<button class="btn btn-sm btn-primary col-sm-3 offset-md-3"> Save</button>
+								<button class="btn btn-sm btn-success col-sm-3 offset-md-4"> Save</button>
 								<button class="btn btn-sm btn-default col-sm-3" type="button" onclick="$('#manage-gallery').get(0).reset()"> Cancel</button>
 							</div>
 						</div>
@@ -43,15 +46,27 @@
 			<!-- Table Panel -->
 			<div class="col-md-8">
 				<div class="card">
+				    <style>.card-header{color:red}</style>
 					<div class="card-header">
-						<b>gallery List</b>
+						<h4><b>Gallery List</b></h4>
 					</div>
 					<div class="card-body">
 						<table class="table table-bordered table-hover">
+						<style>
+						table {
+						border-collapse: collapse;
+						width: 100%;
+						}
+						th {
+						background-color: #04AA6D;
+						color: white;
+						}
+						</style>
 							<thead>
 								<tr>
-									<th class="text-center">#</th>
-									<th class="text-center">IMG</th>
+								
+									<th class="text-center">Sl.no</th>
+									<th class="text-center">Image</th>
 									<th class="text-center">Gallery</th>
 									<th class="text-center">Action</th>
 								</tr>
@@ -104,6 +119,7 @@
 		max-height: 23vh;
 		max-width: calc(100%);
 	}
+	td:nth-child(odd){background-color:#D6EEEE}
 	.gimg{
 		max-height: 15vh;
 		max-width: 10vw;
