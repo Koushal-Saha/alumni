@@ -119,7 +119,8 @@
 		max-height: 23vh;
 		max-width: calc(100%);
 	}
-	td:nth-child(odd){background-color:#D6EEEE}
+	td:nth-child(even){background-color:#D6EEEE}
+	td:nth-child(odd){background-color:skyblue}
 	.gimg{
 		max-height: 15vh;
 		max-width: 10vw;
