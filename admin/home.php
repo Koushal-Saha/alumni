@@ -1,13 +1,13 @@
 <?php include 'db_connect.php' ?>
 <style>
    span.float-right.summary_icon {
-    font-size: 3rem;
+    font-size: 2rem;
     position: absolute;
     right: 1rem;
     color: #ffffff96;
 }
 .imgs{
-		margin: .5em;
+		margin: .20em;
 		max-width: calc(100%);
 		max-height: calc(100%);
 	}
@@ -37,68 +37,60 @@
 </style>
 
 <div class="containe-fluid">
-	<div class="row mt-3 ml-3 mr-3">
+	<div class="row ml-3 mt-4 mr-3">
         <div class="col-lg-12">
             <div class="card">
+                <body style="background-color:aqua">
                 <div class="card-body">
-                    <?php echo "Welcome back ". $_SESSION['login_name']."!"  ?>
+                    <style>.red{color:red;}</style>
+                    <h1><p class="red"><?php echo "Welcome Back ". $_SESSION['login_name']."..."  ?></p></h1>
+
                     <hr>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="card">
-                                <div class="card-body bg-primary">
+                                <div class="card-body bg-danger">
                                     <div class="card-body text-white">
-                                        <span class="float-right summary_icon"><i class="fa fa-users"></i></span>
-                                        <h4><b>
-                                            <?php echo $conn->query("SELECT * FROM alumnus_bio where status = 1")->num_rows; ?>
-                                        </b></h4>
-                                        <p><b>Alumni</b></p>
+                                        <span class="float-right summary_icon"><i class="fa fa-users"></i></span>    
+                                        <p><b><h3>Alumni</h3></b></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-md-3">
                             <div class="card">
-                                <div class="card-body bg-info">
+                                <div class="card-body bg-primary">
                                     <div class="card-body text-white">
-                                        <span class="float-right summary_icon"><i class="fa fa-comments"></i></span>
-                                        <h4><b>
-                                            <?php echo $conn->query("SELECT * FROM forum_topics")->num_rows; ?>
-                                        </b></h4>
-                                        <p><b>Forum Topics</b></p>
+                                        <span class="float-right summary_icon"><i class="fa fa-star"></i></span>    
+                                        <p><b><h3>Forum Topics</h3></b></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-md-3">
                             <div class="card">
                                 <div class="card-body bg-warning">
                                     <div class="card-body text-white">
-                                        <span class="float-right summary_icon"><i class="fa fa-briefcase"></i></span>
-                                        <h4><b>
-                                            <?php echo $conn->query("SELECT * FROM careers")->num_rows; ?>
-                                        </b></h4>
-                                        <p><b>Posted jobs</b></p>
+                                        <span class="float-right summary_icon"><i class="fa fa-user-tie"></i></span>    
+                                        <p><b><h3>Posted jobs</h3></b></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-md-3">
                             <div class="card">
-                                <div class="card-body bg-primary">
+                                <div class="card-body bg-success">
                                     <div class="card-body text-white">
-                                        <span class="float-right summary_icon"><i class="fa fa-calendar-day"></i></span>
-                                        <h4><b>
-                                            <?php echo $conn->query("SELECT * FROM events where date_format(schedule,'%Y-%m%-d') >= '".date('Y-m-d')."' ")->num_rows; ?>
-                                        </b></h4>
-                                        <p><b>Upcoming Events</b></p>
+                                        <span class="float-right summary_icon"><i class="fa fa-calendar-day"></i></span>    
+                                        <p><b><h3>Upcoming Events</h3></b></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>	
-
-                    
+                    </div>	    
                 </div>
             </div>      			
         </div>
