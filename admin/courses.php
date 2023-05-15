@@ -1,20 +1,27 @@
 <?php include('db_connect.php');?>
 
 <div class="container-fluid">
-	
+<body style="background-color:aqua">
 	<div class="col-lg-12">
 		<div class="row">
 			<!-- FORM Panel -->
 			<div class="col-md-4">
 			<form action="" id="manage-course">
 				<div class="card">
+				<style>.card-header{color:red}</style>
 					<div class="card-header">
-						    Course Form
+						<style>
+							h4{
+							background-color: yellow;
+						    }
+						</style>
+						    <h4><b>Course Form</b></h4>
 				  	</div>
 					<div class="card-body">
 							<input type="hidden" name="id">
 							<div class="form-group">
-								<label class="control-label">Course</label>
+							<style>.control-label{color:blue}</style>
+								<label class="control-label"><b>Add Course Name:</b></label>
 								<input type="text" class="form-control" name="course">
 							</div>
 							
@@ -23,7 +30,7 @@
 					<div class="card-footer">
 						<div class="row">
 							<div class="col-md-12">
-								<button class="btn btn-sm btn-primary col-sm-3 offset-md-3"> Save</button>
+								<button class="btn btn-sm btn-success col-sm-3 offset-md-3"> Save</button>
 								<button class="btn btn-sm btn-default col-sm-3" type="button" onclick="$('#manage-course').get(0).reset()"> Cancel</button>
 							</div>
 						</div>
@@ -37,13 +44,23 @@
 			<div class="col-md-8">
 				<div class="card">
 					<div class="card-header">
-						<b>course List</b>
+						<b><h4>Course List</b></h4>
 					</div>
 					<div class="card-body">
 						<table class="table table-bordered table-hover">
+						<style>
+						table {
+						border-collapse: collapse;
+						width: 100%;
+						}
+						th {
+						background-color: #04AA6D;
+						color: white;
+						}
+						</style>
 							<thead>
 								<tr>
-									<th class="text-center">#</th>
+									<th class="text-center">Sl.no</th>
 									<th class="text-center">Course</th>
 									<th class="text-center">Action</th>
 								</tr>
@@ -80,6 +97,8 @@
 	td{
 		vertical-align: middle !important;
 	}
+	td:nth-child(odd){background-color:#D6EEEE}
+	td:nth-child(even){background-color:skyblue}
 </style>
 <script>
 	
