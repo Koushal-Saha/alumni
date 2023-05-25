@@ -1,7 +1,7 @@
 <?php include('db_connect.php');?>
 
 <div class="container-fluid">
-	
+<body style="background-color:aqua">
 	<div class="col-lg-12">
 		<div class="row mb-4 mt-4">
 			<div class="col-md-12">
@@ -14,8 +14,9 @@
 			<!-- Table Panel -->
 			<div class="col-md-12">
 				<div class="card">
+					<style>.card-header{color:red}</style>
 					<div class="card-header">
-						<b>List of Alumni</b>
+						<h2><b>List of Alumni</b></h2>
 						<!-- <span class="float:right"><a class="btn btn-primary btn-block btn-sm col-sm-2 float-right" href="index.php?page=manage_alumni" id="new_alumni">
 					<i class="fa fa-plus"></i> New Entry
 				</a></span> -->
@@ -32,7 +33,7 @@
 							</colgroup> -->
 							<thead>
 								<tr>
-									<th class="text-center">#</th>
+									<th class="text-center">Sl.no</th>
 									<th class="">Avatar</th>
 									<th class="">Name</th>
 									<th class="">Course Graduated</th>
@@ -92,9 +93,15 @@
 	td p{
 		margin: unset
 	}
+	th {
+		background-color: #04AA6D;
+		color: white;
+	}
+	td:nth-child(odd){background-color:#D6EEEE}
+	td:nth-child(even){background-color:skyblue}
 	img{
 		max-width:100px;
-		max-height: :150px;
+		max-height:150px;
 	}
 	.avatar {
 	    display: flex;
