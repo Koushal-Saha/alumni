@@ -10,12 +10,7 @@
 				<div class="card">
 				<style>.card-header{color:red}</style>
 					<div class="card-header">
-						<style>
-							h4{
-							background-color: yellow;
-						    }
-						</style>
-						    <h4><b>Course Form</b></h4>
+						    <h2><b>Course Form</b></h2>
 				  	</div>
 					<div class="card-body">
 							<input type="hidden" name="id">
@@ -44,7 +39,7 @@
 			<div class="col-md-8">
 				<div class="card">
 					<div class="card-header">
-						<b><h4>Course List</b></h4>
+						<b><h2>Course List</b></h2>
 					</div>
 					<div class="card-body">
 						<table class="table table-bordered table-hover">
