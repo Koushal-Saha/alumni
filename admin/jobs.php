@@ -16,7 +16,7 @@
 	<div class="col-lg-12">
 		<div class="row mb-4 mt-4">
 			<div class="col-md-12">
-				
+			<body style="background-color:aqua">		
 			</div>
 		</div>
 		<div class="row">
@@ -25,12 +25,13 @@
 			<!-- Table Panel -->
 			<div class="col-md-12">
 				<div class="card">
+				<style>.card-header{color:red}</style>
 					<div class="card-header">
-						<b>Jobs List</b>
+						<h2><b>Jobs List</b></h2>
 						<span class="">
 
 							<button class="btn btn-primary btn-block btn-sm col-sm-2 float-right" type="button" id="new_career">
-					<i class="fa fa-plus"></i> New</button>
+					<i class="fa fa-plus"></i> Add New Job</button>
 				</span>
 					</div>
 					<div class="card-body">
@@ -38,7 +39,7 @@
 						<table class="table table-bordered table-condensed table-hover">
 							<thead>
 								<tr>
-									<th class="text-center">#</th>
+									<th class="text-center">Sl.no</th>
 									<th class="">Company</th>
 									<th class="">Job Title</th>
 									<th class="">Posted By</th>
@@ -92,6 +93,12 @@
 	td p{
 		margin: unset
 	}
+	th {
+		background-color: #04AA6D;
+		color: white;
+	}
+	td:nth-child(odd){background-color:#D6EEEE}
+	td:nth-child(even){background-color:skyblue}
 	img{
 		max-width:100px;
 		max-height: :150px;
