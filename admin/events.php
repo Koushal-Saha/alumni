@@ -5,7 +5,7 @@
 	<div class="col-lg-12">
 		<div class="row mb-4 mt-4">
 			<div class="col-md-12">
-				
+			<body style="background-color:aqua">
 			</div>
 		</div>
 		<div class="row">
@@ -14,8 +14,9 @@
 			<!-- Table Panel -->
 			<div class="col-md-12">
 				<div class="card">
+				<style>.card-header{color:red}</style>
 					<div class="card-header">
-						<b>List of Events</b>
+						<h2><b>List of Events</b></h2>
 						<span class="float:right"><a class="btn btn-primary btn-block btn-sm col-sm-2 float-right" href="index.php?page=manage_event" id="new_event">
 					<i class="fa fa-plus"></i> New Entry
 				</a></span>
@@ -32,7 +33,7 @@
 							</colgroup>
 							<thead>
 								<tr>
-									<th class="text-center">#</th>
+									<th class="text-center">Sl.no</th>
 									<th class="">Schedule</th>
 									<th class="">Title</th>
 									<th class="">Description</th>
@@ -90,9 +91,15 @@
 	td p{
 		margin: unset
 	}
+	th {
+		background-color: #04AA6D;
+		color: white;
+	}
+	td:nth-child(odd){background-color:#D6EEEE}
+	td:nth-child(even){background-color:skyblue}
 	img{
 		max-width:100px;
-		max-height: :150px;
+		max-height:150px;
 	}
 </style>
 <script>
