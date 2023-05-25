@@ -10,7 +10,7 @@
 				<div class="card">
 					<style>.card-header{color:red}</style>
 					<div class="card-header">
-						    <h4><b>Upload</b></h4>
+						    <h2><b>Upload</b></h2>
 				  	</div>
 					<div class="card-body">
 							<input type="hidden" name="id">
@@ -48,7 +48,7 @@
 				<div class="card">
 				    <style>.card-header{color:red}</style>
 					<div class="card-header">
-						<h4><b>Gallery List</b></h4>
+						<h2><b>Gallery</b></h2>
 					</div>
 					<div class="card-body">
 						<table class="table table-bordered table-hover">
