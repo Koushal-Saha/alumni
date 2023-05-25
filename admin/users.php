@@ -3,15 +3,25 @@
 ?>
 
 <div class="container-fluid">
-	
-	<div class="row">
-	<div class="col-lg-12">
-			<button class="btn btn-primary float-right btn-sm" id="new_user"><i class="fa fa-plus"></i> New user</button>
-	</div>
-	</div>
-	<br>
+
 	<div class="row">
 		<div class="card col-lg-12">
+		<body style="background-color:aqua">	
+		<div class="card">
+		
+				<style>.card-header{color:red}</style>
+					<div class="card-header">
+						<h2><b>Users List</b></h2>
+						<span class="">
+
+							<button class="btn btn-primary btn-block btn-sm col-sm-2 float-right" type="button" id="new_career">
+					<i class="fa fa-plus"></i> New User</button>
+				</span>
+					</div>
+					<div class="card-body">
+                </div>
+
+
 			<div class="card-body">
 				<table class="table-striped table-bordered col-md-12">
 			<thead>
@@ -69,6 +79,14 @@
 	</div>
 
 </div>
+<Style>
+	th {
+		background-color: #04AA6D;
+		color: white;
+	}
+	td:nth-child(odd){background-color:#D6EEEE}
+	td:nth-child(even){background-color:skyblue}
+</Style>
 <script>
 	$('table').dataTable();
 $('#new_user').click(function(){
