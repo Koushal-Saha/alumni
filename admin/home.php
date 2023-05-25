@@ -39,6 +39,8 @@
 <div class="containe-fluid">
 	<div class="row ml-3 mt-4 mr-3">
         <div class="col-lg-12">
+        <div class="row mb-4 mt-4">
+			<div class="col-md-12">
             <div class="card">
                 <body style="background-color:aqua">
                 <div class="card-body">
@@ -46,41 +48,77 @@
                     <h1><p class="red"><?php echo "Welcome Back ". $_SESSION['login_name']."..."  ?></p></h1>
 
                     <hr>
-                    <div class="row">
-                        <div class="col-md-3">
+                    <div class="row row-cols-3">
+
+                        
+                        <div class="col">
+                        <a href="http://localhost/code/alumni/admin/index.php?page=gallery">
+                            <div class="card">
+                                <div class="card-body bg-primary">
+                                    <div class="card-body text-white">
+                                        <span class="float-right summary_icon"><i class="fa fa-image"></i></span>    
+                                        <p><b><h3>Gallery</h3></b></p>
+                                    </div>
+                                </div>
+                            </div></a>
+                        </div>
+
+                        
+                        <div class="col">
+                        <a href="http://localhost/code/alumni/admin/index.php?page=courses">
                             <div class="card">
                                 <div class="card-body bg-danger">
+                                    <div class="card-body text-white">
+                                        <span class="float-right summary_icon"><i class="fa fa-graduation-cap"></i></span>    
+                                        <p><b><h3>Courses</h3></b></p>
+                                    </div>
+                                </div>
+                            </div></a>
+                        </div>
+
+                       
+                        <div class="col">
+                        <a href="http://localhost/code/alumni/admin/index.php?page=alumni">
+                            <div class="card">
+                                <div class="card-body bg-info">
                                     <div class="card-body text-white">
                                         <span class="float-right summary_icon"><i class="fa fa-users"></i></span>    
                                         <p><b><h3>Alumni</h3></b></p>
                                     </div>
                                 </div>
-                            </div>
+                            </div></a>
                         </div>
+                        
 
-                        <div class="col-md-3">
+                        
+                        <div class="col">
+                        <a href="http://localhost/code/alumni/admin/index.php?page=forums">
                             <div class="card">
-                                <div class="card-body bg-primary">
+                                <div class="card-body bg-warning">
                                     <div class="card-body text-white">
                                         <span class="float-right summary_icon"><i class="fa fa-star"></i></span>    
                                         <p><b><h3>Forum Topics</h3></b></p>
                                     </div>
                                 </div>
-                            </div>
+                            </div></a>
                         </div>
 
-                        <div class="col-md-3">
+                        
+                        <div class="col">
+                        <a href="http://localhost/code/alumni/admin/index.php?page=jobs">
                             <div class="card">
-                                <div class="card-body bg-warning">
+                                <div class="card-body bg-secondary">
                                     <div class="card-body text-white">
                                         <span class="float-right summary_icon"><i class="fa fa-user-tie"></i></span>    
                                         <p><b><h3>Posted jobs</h3></b></p>
                                     </div>
                                 </div>
-                            </div>
+                            </div></a>
                         </div>
 
-                        <div class="col-md-3">
+                        
+                        <div class="col">
+                        <a href="http://localhost/code/alumni/admin/index.php?page=events">
                             <div class="card">
                                 <div class="card-body bg-success">
                                     <div class="card-body text-white">
@@ -88,7 +126,7 @@
                                         <p><b><h3>Upcoming Events</h3></b></p>
                                     </div>
                                 </div>
-                            </div>
+                            </div></a>
                         </div>
                     </div>	    
                 </div>
