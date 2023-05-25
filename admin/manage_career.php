@@ -13,25 +13,25 @@ if(isset($_GET['id'])){
 				<input type="hidden" name="id" value="<?php echo isset($_GET['id']) ? $_GET['id']:'' ?>" class="form-control">
 		<div class="row form-group">
 			<div class="col-md-8">
-				<label class="control-label">Company</label>
+				<b><label class="control-label">Company</label></b>
 				<input type="text" name="company" class="form-control" value="<?php echo isset($company) ? $company:'' ?>">
 			</div>
 		</div>
 		<div class="row form-group">
 			<div class="col-md-8">
-				<label class="control-label">Job Title</label>
+				<b><label class="control-label">Job Title</label></b>
 				<input type="text" name="title" class="form-control" value="<?php echo isset($job_title) ? $job_title:'' ?>">
 			</div>
 		</div>
 		<div class="row form-group">
 			<div class="col-md-8">
-				<label class="control-label">Location</label>
+				<b><label class="control-label">Location</label></b>
 				<input type="text" name="location" class="form-control" value="<?php echo isset($location) ? $location:'' ?>">
 			</div>
 		</div>
 		<div class="row form-group">
 			<div class="col-md-12">
-				<label class="control-label">Description</label>
+				<b><label class="control-label">Description</label></b>
 				<textarea name="description" class="text-jqte"><?php echo isset($description) ? $description : '' ?></textarea>
 			</div>
 		</div>
